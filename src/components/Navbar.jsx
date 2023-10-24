@@ -62,7 +62,7 @@ function Navbar() {
       </div>
    </nav>
 
-   <div className={`lg:hidden px-5 space-y-4 pb-5 pt-5 text-lg font-blod bg-purple-300 ${IsMenuOpen?"block top-0 right-0 left-0":"hidden"}`}>{
+   <div className={`lg:hidden px-5 space-y-4 pb-5 pt-5 text-lg font-blod bg-purple-300 ${IsMenuOpen?"block fixed right-0 left-0":"hidden"}`}>{
      navItems.map(({ link, path }) => (
       <a key={link} href={path} className="block hover:text-yellow-200">
         {link}
