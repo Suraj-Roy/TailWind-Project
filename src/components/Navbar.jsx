@@ -22,7 +22,7 @@ function Navbar() {
   ];
   return (
     <>
-    <nav className="md:px-14 p-3 bg-white mx-auto top-0">
+    <nav className="md:px-14 p-3 bg-white mx-auto top-0 left-0 right-0">
       <div className="text-lg mx-auto flex items-center justify-between font-medium">
         <div className="flex items-center space-x-14">
           <a
@@ -55,16 +55,16 @@ function Navbar() {
         <div className="lg:hidden flex items-center justify-end mr-3">
           
               <button className=" cursor-pointer" onClick={toggleMenuOpen}>{
-                IsMenuOpen?(<RxCross2 className="w-6 h-6 "/>):(<GiHamburgerMenu className="w-6 h-6 "/>)
+                IsMenuOpen?(<RxCross2 className="w-6 h-6 "/>):(<GiHamburgerMenu className="w-6 h-6"/>)
               }
               </button>
         </div>
       </div>
    </nav>
 
-   <div className={`lg:hidden px-5 space-y-4 pb-5 pt-5 bg-purple-300 ${IsMenuOpen?"block top-0 right-0 left-0":"hidden"}`}>{
+   <div className={`lg:hidden px-5 space-y-4 pb-5 pt-5 text-lg font-blod bg-purple-300 ${IsMenuOpen?"block top-0 right-0 left-0":"hidden"}`}>{
      navItems.map(({ link, path }) => (
-      <a key={link} href={path} className="block hover:text-sky-200">
+      <a key={link} href={path} className="block hover:text-yellow-200">
         {link}
       </a>
     ))}
